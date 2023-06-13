@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "googleapis": "^95.0.0"
+  },
+  "name": "google_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tommy",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^16.1.4",
+    "nodemon": "^2.0.22"
+  }
+}
