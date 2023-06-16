@@ -9,7 +9,6 @@ class ClassController {
     );
 
     const { tokens } = await oAuth2Client.getToken(req.body.code);
-    console.log("code ", tokens);
     res.send(tokens);
   }
 }
