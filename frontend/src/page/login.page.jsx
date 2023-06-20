@@ -3,7 +3,7 @@ import axios from "axios";
 
 const MainPage = () => {
   const googleSocialLogin = useGoogleLogin({
-    scope: `https://www.googleapis.com/auth/classroom.courses https://www.googleapis.com/auth/classroom.announcements`,
+    scope: `https://www.googleapis.com/auth/classroom.courses https://www.googleapis.com/auth/classroom.announcements https://www.googleapis.com/auth/classroom.coursework.me https://www.googleapis.com/auth/classroom.coursework.me.readonly`,
     onSuccess: async (res) => {
       axios
         .post("http://localhost:5000/teacher/login", { code: res.code })

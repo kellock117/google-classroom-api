@@ -29,3 +29,8 @@ export const deleteAnnouncement = (courseId, announcementId) =>
       announcementId,
     },
   });
+
+export const viewCourseWorks = (courseId) =>
+  API.get(`/courseWork/view/${courseId}`);
+export const createCourseWork = (courseId) =>
+  API.post(`/courseWork/create`, { courseId: courseId });
